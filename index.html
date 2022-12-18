@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 익스 호환성에 관한 내용 -->
+    <!-- 렌더링 : 화면에 출력되는 것을 렌더링이라고 함 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- viewport : 보여지는 화면에 관한 설명 -->
+    <!-- content : 화면에 정보에 관한 설명 -->
+    <!-- 반응형 웹을 만들때 작성해야되는 부분 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta name="description" : 타이틀 밑에 나오는 설명란. -->
+    <meta name="description" content="김포국제공항. 친절한 공항, 다시찾고싶은 공항. 김포국제공항 ... 공항탑승수속 소요시간 안내. 셀프 체크인부터 항공기 출발까지 실시간 평균 소요시간 안내." />
+    <meta name="robot" content="index,nofollow" />
+    <meta name="author" content="김민규" />
+    <meta name="keywords" content="공항, 김포, 김포공항, 포트폴리오, 프론트엔드" />
+    <!-- og(open graph): 미리보기 설정 -->
+    <meta property="og:title" content="김포공항" />
+    <meta property="og:description" content="김포국제공항. 친절한 공항, 다시찾고싶은 공항. 김포국제공항 ... 공항탑승수속 소요시간 안내. 셀프 체크인부터 항공기 출발까지 실시간 평균 소요시간 안내." />
+
+    <meta property="og:url" content="http://min9yu.dothome.co.kr" />
+    <meta property="og:image" content="./images/og-img.png" />
+
+    <title>메인|김포국제공항</title>
+    <!-- shortchut icon 주소 :https://www.airport.co.kr/type/common/img/common/ico_favicon.ico -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./favicon /ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="header_wrap">
+      <header>
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <ul id="gnb">
+          <li class="gnb_depth1">
+            <a href="#" class="highlight">통합예약</a>
+            <div class="depth2_wrap">
+              <ul class="depth2 depth2_first">
+                <li>
+                  <a href="#"><span class="gnb_depth_icons gnb_icons1"></span>항공권</a>
+                </li>
+                <li>
+                  <a href="#"><span class="gnb_depth_icons gnb_icons2"></span>주차</a>
+                </li>
+                <li>
+                  <a href="#"><span class="gnb_depth_icons gnb_icons3"></span>렌터카</a>
+                </li>
+                <li>
+                  <a href="#"><span class="gnb_depth_icons gnb_icons4"></span>호텔</a>
+                </li>
+                <li>
+                  <a href="#"><span class="gnb_depth_icons gnb_icons5"></span>여행상품</a>
+                </li>
+                <li>
+                  <a href="#"><span class="gnb_depth_icons gnb_icons6"></span>교통약자</a>
+                </li>
+                <li>
+                  <a href="#"><span class="gnb_depth_icons gnb_icons7"></span>문화공연</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb_depth1">
+            <a href="#">운항정보</a>
+            <div class="depth2_wrap">
+              <ul class="depth2 gnb_depth2_txt">
+                <li>
+                  <a href="#"> 출발/도착안내 </a>
+                </li>
+                <li>
+                  <a href="#"> 탑승시뮬레이션 </a>
+                </li>
+                <li>
+                  <a href="#"> 빠른수속 </a>
+                </li>
+                <li>
+                  <a href="#"> 항공기 탑승 </a>
+                </li>
+                <li>
+                  <a href="#"> 도착시뮬레이션 </a>
+                </li>
+                <li>
+                  <a href="#"> 운항스케줄 </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb_depth1">
+            <a href="#">교통정보</a>
+            <div class="depth2_wrap">
+              <ul class="depth2 gnb_depth2_txt">
+                <li><a href="#">대중교통</a></li>
+                <li><a href="#">렌터카</a></li>
+                <li><a href="#">주차안내</a></li>
+                <li><a href="#">다자녀가구 할인 등록</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb_depth1">
+            <a href="#">시설정보</a>
+            <div class="depth2_wrap">
+              <ul class="depth2 gnb_depth2_txt">
+                <li><a href="#">시설안내</a></li>
+                <li>
+                  <a href="#">공항시설</a>
+                  <ul>
+                    <li><a href="#">SGBAC</a></li>
+                    <li><a href="#">공항 전망대</a></li>
+                    <li><a href="#">유료대합실</a></li>
+                    <li><a href="#">스카이시티</a></li>
+                    <li><a href="#">장애인시설</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">공항이용가이드</a>
+                  <ul>
+                    <li><a href="#">임산부 및 유아,어린이 동반</a></li>
+                    <li><a href="#">장애인,고령자 동반</a></li>
+                    <li><a href="#">반려동물 동반</a></li>
+                    <li><a href="#">교통약자 이동서비스</a></li>
+                    <li><a href="#">교통약자 우선수속</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">공항시설 전화번호</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb_depth1">
+            <a href="#">여행정보</a>
+            <div class="depth2_wrap">
+              <ul class="depth2 gnb_depth2_txt">
+                <li><a href="#">여행지정보</a></li>
+                <li>
+                  <a href="#">알짜여행팁</a>
+                  <ul>
+                    <li><a href="#">항공권 소지자 혜택</a></li>
+                    <li><a href="#">공항이용 알짜팁</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb_depth1">
+            <a href="#">업무지원</a>
+            <div class="depth2_wrap">
+              <ul class="depth2 gnb_depth2_txt">
+                <li><a href="#">공항소개</a></li>
+                <li>
+                  <a href="#">보호구역출입증</a>
+                  <ul>
+                    <li><a href="#">보호구역출입증 안내</a></li>
+                    <li><a href="#">공항별 공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">공항 시설사용</a>
+                  <ul>
+                    <li><a href="#">공항시설사용료</a></li>
+                    <li><a href="#">항공사 사용계약</a></li>
+                    <li><a href="#">임대시설 사용안내</a></li>
+                    <li><a href="#">이동지역</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">안전관리시스템</a>
+                  <ul>
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">안전정책</a></li>
+                    <li><a href="#">안전성과지표 관리대상</a></li>
+                    <li><a href="#">안전회보</a></li>
+                    <li><a href="#">자발적 비밀보고</a></li>
+                    <li><a href="#">관련사이트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">산업안전보건</a>
+                  <ul>
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">안전보건방침</a></li>
+                    <li><a href="#">안전보건경영시스템</a></li>
+                    <li><a href="#">안전관련 법령</a></li>
+                    <li><a href="#">관련사이트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">특허이전</a>
+                  <ul>
+                    <li><a href="#">특허 허여</a></li>
+                    <li><a href="#">KAC 특허보유현황</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">공항소방 구조대</a></li>
+                <li><a href="#">전자고지</a></li>
+                <li><a href="#">월정기권 납부</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb_depth1">
+            <a href="#">고객참여</a>
+            <div class="depth2_wrap">
+              <ul class="depth2 gnb_depth2_txt">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트 정보</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">유실물관리센터</a></li>
+                <li>
+                  <a href="#">고객의소리</a>
+                  <ul>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">Ariport Community</a></li>
+                    <li><a href="#">공개목록</a></li>
+                    <li><a href="#">KAC안전신문고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="top_util">
+          <a href="#" class="topLogin_btn">로그인</a>
+          <a href="#" class="topSitemap_btn">사이트맵</a>
+          <button class="lang_button">KOR</button>
+          <button class="popup_top">팝업닫기</button>
+        </div>
+        <div class="gnb_util">
+          <ul>
+            <li><button>공항이동</button></li>
+            <li>
+              <a href="#"><img src="./images/ico_topSearch_white.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div class="intro_wrap container">
+      <div class="intro">
+        <div class="rowArea">
+          <div class="txtArea">
+            <p>친절한 공항,다시찾고싶은 공항</p>
+            <p>김포국제공항</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brd_time container">
+      <div class="rowArea">
+        <div class="tit_Area">
+          <p>BOARDING PROCESS TIME</p>
+          <p>공항 탑승수속 소요시간 안내</p>
+          <p>셀프 체크인부터 항공기 출발까지 실시간 평균 소요시간 안내</p>
+        </div>
+        <div class="proc">
+          <div class="time">
+            <strong>안내 미운영</strong>
+            <span>(21:30~06:30)</span>
+          </div>
+          <div class="standard">
+            <div class="std_time">
+              <strong>AM</strong>
+              <span>기준</span>
+              <button></button>
+            </div>
+            <div class="std_type">
+              <button>국내선</button>
+              <button>국제선</button>
+            </div>
+            <div class="std_status">
+              <ul>
+                <li>
+                  <span class="status_fast">원활</span>
+                </li>
+                <li>
+                  <span class="status_normal">보통</span>
+                </li>
+                <li>
+                  <span class="status_busy">혼잡</span>
+                </li>
+                <li>
+                  <span class="status_verybusy">매우혼잡</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="proc_img">
+            <ul>
+              <li><span>공항 도착(주차)</span></li>
+              <li><span>셀프 체크인</span></li>
+              <li><span>수하물 위탁</span></li>
+              <li><span>신분확인</span></li>
+              <li><span>보안검색</span></li>
+              <li><span>탑승시간</span></li>
+              <li><span>출발</span></li>
+            </ul>
+          </div>
+          <div class="proc_footer">
+            <div class="step1">
+              <div>
+                <p></p>
+              </div>
+            </div>
+            <div class="step2">
+              <div>
+                <p></p>
+              </div>
+            </div>
+            <div class="step3">
+              <div>
+                <p></p>
+              </div>
+            </div>
+            <div class="step4">
+              <div>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="proc_text">
+            <p><span>항공권 셀프 체크인 및 수하물 위탁</span> 가능 시간은 항공사별 정책에 따라 달라질 수 있으며, 일반적으로 <span>국내선 항공기는 출발 예정 시각 30분전까지 가능</span>함에 유의하시기 바랍니다.</p>
+            <p>해당 소요시간 안내서비스는 탑승수속 구간별 여객이 체류하고 있는 <span>평균소요시간</span>을 안내하는 것으로, 기상상황 등 예상치 못한 요인에 따라 실제 소요시간과는 차이가 있을 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="guide container">
+      <div class="rowArea">
+        <div class="tit_Area">
+          <p>AIRPROT GUIDE</p>
+          <p>공항가이드</p>
+        </div>
+        <div class="guide_item">
+          <div>
+            <p>공항 오기 전</p>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item01.png" alt="오시는 길">
+                <span>오시는 길</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item02.png" alt="대중교통">
+                <span>대중교통</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item03.png" alt="주차안내">
+                <span>주차안내</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item04.png" alt="기내반입 금지물품">
+                <span>기내반입 금지물품</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item05.png" alt="항공편">
+                <span>항공편</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item06.png" alt="공항 이용안내">
+                <span>공항 이용안내</span>
+              </a>
+          </div>
+          <div>
+            <p>공항에서</p>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item07.png" alt="공항이용 알짜팁">
+                <span>공항이용 알짜팁</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item08.png" alt="편의시설">
+                <span>편의시설</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item09.png" alt="상업시설">
+                <span>상업시설</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item10.png" alt="탑승수속">
+                <span>탑승수속</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item11.png" alt="교통약자 서비스">
+                <span>교통약자 서비스</span>
+              </a>
+              <a href="#" class="guide_iconItem">
+                <img src="./images/guide-item12.png" alt="수하물수취">
+                <span>수하물수취</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flight container">
+      <div class="rowArea">
+        <div class="flight_item">
+          <div class="tit_Area">
+            <p>BOOK A FLIGHT</p>
+            <p>항공권예약</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parking_info container">
+      <div class="rowArea">
+        <div class="parking_itemGroup">
+          <div class="parking_item">
+            <div class="tit_Area">
+              <p>PARKING LOT STATUS</p>
+              <p>주차 현황</p>
+            </div>
+            <div class="parking_status">
+              <p class="parkingAria_tit">
+                국내선 제1주차장
+              </p>
+              <div class="status_bar">
+                <p>원활</p>
+                <p>혼잡</p>
+                <p>만차</p>
+              </div>
+            </div>
+            <div class="parking_status">
+              <p class="parkingAria_tit">
+                국내선 제2주차장
+              </p>
+              <div class="status_bar">
+                <p>원활</p>
+                <p>혼잡</p>
+                <p>만차</p>
+              </div>
+            </div>
+            <div class="parking_status">
+              <p class="parkingAria_tit">
+                국제선 지하추차장
+              </p>
+              <div class="status_bar">
+                <p>원활</p>
+                <p>혼잡</p>
+                <p>만차</p>
+              </div>
+            </div>
+            <div class="parking_status">
+              <p class="parkingAria_tit">
+                국제선 주차빌딩
+              </p>
+              <div class="status_bar">
+                <p>원활</p>
+                <p>혼잡</p>
+                <p>만차</p>
+              </div>
+            </div>
+            <div class="parking_status">
+              <p class="parkingAria_tit">
+                화물청사 주차장
+              </p>
+              <div class="status_bar">
+                <p>원활</p>
+                <p>혼잡</p>
+                <p>만차</p>
+              </div>
+            </div>
+            <div class="parking_status">
+              <p class="parkingAria_tit">
+                예약주차장
+              </p>
+              <div class="status_bar">
+                <p>원활</p>
+                <p>혼잡</p>
+                <p>만차</p>
+              </div>
+            </div>
+          </div>
+          <div class="parking_item">
+            <div class="tit_Area">
+              <p>PARKING RESERVATION</p>
+              <p>주차 예약</p>
+            </div>
+            <div class="parking_link">
+              <a href="#">
+                <img src="./images/parking_img01.png" alt="">
+                <span>PARKING FEE</span>
+                <b>주차 요금 안내</b>
+              </a>
+              <a href="#">
+                <img src="./images/parking_img02.png" alt="">
+                <span>CHANGE/CANCEL</span>
+                <b>예약 변경/취소</b>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="transport container">
+      <div class="rowArea">
+        <div class="tit_Area">
+          <p>PUBLIC TRANSPORT</p>
+          <p>교통안내</p>
+        </div>
+        <div class="transport_itemGroup">
+          <div class="transport_item">
+            <div class="transport_info">
+              <span>BY BUS</span>
+              <b>버스 이용</b>
+              <p>국내선 1층 서편 (1번 게이트 부근) 시외버스 ‘11-1, 11-2, 11-3, 11-4’ 번을 이용하세요.
+              </p>
+            </div>
+          </div>
+          <div class="transport_item">
+            <div class="transport_info">
+              <span>BY TAXI</span>
+              <b>택시 이용</b>
+              <p>국내선 6,8번 게이트로 나가서 횡단보도를 건너면 택시 승강장이 있습니다.
+              </p>
+            </div>
+          </div>
+          <div class="transport_item">
+            <div class="transport_info">
+              <span>BY SUBWAY</span>
+              <b>지하철 이용</b>
+              <p>국내선 1층 서편 지하철 에스컬레이터를 타고 내려가면 '5,9호선과 공항철도' 김포공항역이 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="airport_guide container">
+      <div class="rowArea">
+        <div class="tit_Area">
+          <p>AT THE AIRPORT</p>
+          <p>시설안내</p>
+        </div>
+        <div class="airport_tip">
+          <a href="#">
+            <img src="./images/airport_tip.png" alt="">
+            <span>공항이용 알짜팁</span>
+            <b>GIMPO</b>
+          </a>
+        </div>
+        <div class="tip_itemGroup">
+          <div class="tip_item">
+            <a href="#">
+              <img src="./images/tip_itemGroup01.png" alt="">
+              <span>FACILITIES INFORMATIONM</span>
+              <b>시설안내</b>
+            </a>
+          </div>
+          <div class="tip_item">
+            <a href="#">
+              <img src="./images/tip_itemGroup02.png" alt="">
+              <span>SPECIAL ASSISTANCE</span>
+              <b>교통약자 서비스</b>
+            </a>
+          </div>
+          <div class="tip_item">
+            <a href="#">
+              <img src="./images/tip_itemGroup03.png" alt="">
+              <span>CONTACT INFORMATION</span>
+              <b>전화번호 안내</b>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <footer>
+        <ul class="footer_list">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+          <li><a href="#">서비스 제휴안내</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">고객서비스헌장</a></li>
+        </ul>
+        <p class="tel">한국공항공사 고객선터 1661-2626</p>
+        <address><span>07505 서울시 강서구 하늘길 112(공항동)</span></address>
+        <p class="copyright">© 2020 Korea Airports Corporation. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+  </body>
+</html>

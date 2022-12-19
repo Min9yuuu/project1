@@ -401,6 +401,42 @@ header {
   font-weight: 500;
 }
 
+.quick_menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 65px;
+}
+
+.quick_menu a{
+  display: block;
+  width: 168px;
+}
+
+.quick_menu span{
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.quick_menu img{
+  margin-top: 20px;
+  max-width: 100%;
+}
+.quick_menu b{
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
 /* title */
 .tit_Area{
   display: flex;

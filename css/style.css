@@ -870,15 +870,8 @@ header {
   align-items: center;
 }
 
-.transport_item:nth-child(1){
-  background-image: url("../images/transport_item01.png");
-}
-.transport_item:nth-child(2){
-  background-image: url("../images/transport_item02.png");
-}
-.transport_item:nth-child(3){
-  background-image: url("../images/transport_item03.png");
-}
+
+
 .transport_item{
   position: relative;
   width: 30%;
@@ -889,17 +882,31 @@ header {
   background-position: center center;
   margin-right: 40px;
   box-sizing: border-box;
+  transition: all 1s;
 }
 
+.transport_item:hover{
+  background-size: 120% 120%;
+}
+
+.transport_item:nth-child(1){
+  background-image: url("../images/transport_item01.png");
+}
+.transport_item:nth-child(2){
+  background-image: url("../images/transport_item02.png");
+}
+.transport_item:nth-child(3){
+  background-image: url("../images/transport_item03.png");
+}
 
 .transport_info{
   width: calc(100% - 80px);
   position: absolute;
-  margin-right: 40px;
-  background-color: #fff;
   left: 0;
-  bottom: -35px;
-  padding: 35px 30px 10px 30px;
+  bottom: -70px;
+  margin-right: 40px;
+  padding: 35px 30px 30px 30px;
+  background-color: #fff;
   min-height: 250px;
 }
 
@@ -929,6 +936,8 @@ header {
   word-break: keep-all;
   line-height: 27px;
 }
+
+/* airport */
 .airport_tip{
   margin-top: 40px;
   width: 100%;

@@ -595,12 +595,47 @@ header {
   position: relative;
   width: 100%;
   height: 390px;
-  background: url('../images/bg_procProcess_off.png');
+  background: url('../images/proc_body.png');
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
+
+.walkLane{
+  position: absolute;
+  top: 211px;
+  left: 168px;
+  width: calc(100% - 168px);
+  height: 95px;
+  overflow: hidden;
+}
+
+.humen{
+  position: relative;
+  width: 60px;
+  height: 95px;
+  background-image: url('../images/walkman.png');
+  background-position: 0% 100%;
+  animation: human 6s linear  infinite;
+}
+@keyframes human{
+  0%{
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate(952px, 0);
+  }
+}
+
 
 .proc_img ul{
   display: flex;
@@ -883,6 +918,7 @@ header {
   margin-right: 40px;
   box-sizing: border-box;
   transition: all 1s;
+  cursor: pointer;
 }
 
 .transport_item:hover{
@@ -961,7 +997,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .airport_tip:hover img{
@@ -1021,7 +1057,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .tip_item:hover img{
@@ -1076,6 +1112,29 @@ footer{
   margin: 0 auto;
   padding: 0 30px;
 }
+
+.foot_familySite{
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.foot_familySite > ul{
+  width: 210px;
+  overflow: hidden;
+}
+
+#familySite_btn{
+  width: 210px;
+  height: 45px;
+  box-sizing: border-box;
+  padding: 0 100px 0 15px;
+  border: 1px solid #414242;
+  color: #fff;
+  background:url('../images/btn_family_on.png') no-repeat right 17px top 50%;
+  cursor: pointer;
+}
+
 
 .footer_list{
   width: 100%;

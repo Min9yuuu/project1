@@ -943,12 +943,20 @@ header {
   position: relative;
   padding: 40px 40px 20px 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .airport_tip img{
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  transition: all 1s;
+}
+
+.airport_tip:hover img{
+  transform: scale(1.2);
 }
 
 .airport_tip span{
@@ -963,14 +971,12 @@ header {
   background-repeat: no-repeat;
   background-size: 54px auto;
   background-position: right center;
-  left: 15px;
-  top: 50%;
 }
 
 .airport_tip b{
   position: absolute;
-  right: -30px;
-  bottom: -40px;
+  right: 0;
+  bottom: 0;
   font-size: 120px;
   line-height: 1em;
   color: rgba(255,255,255,0.7);
@@ -981,12 +987,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .tip_item{
   width: 30%;
   height: 390px;
-
 }
 
 .tip_item a{
@@ -996,12 +1002,21 @@ header {
   position: relative;
   padding: 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
 
 .tip_item img{
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  transition: all 1s;
+}
+
+.tip_item:hover img{
+  transform: scale(1.2);
 }
 
 .tip_item span{

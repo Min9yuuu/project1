@@ -857,7 +857,9 @@ header {
 
 
 .transport_info{
+  width: calc(100% - 80px);
   position: absolute;
+  margin-right: 40px;
   background-color: #fff;
   left: 0;
   bottom: -35px;

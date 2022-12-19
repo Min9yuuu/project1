@@ -673,7 +673,7 @@ header {
 }
 
 .guide_item > div{
-  width: calc(50%-15px);
+  width: calc(50% - 15px);
   background-color: #fff;
   font-size: 0;
   padding: 35px 45px 65px 35px;

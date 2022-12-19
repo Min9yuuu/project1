@@ -617,22 +617,25 @@ header {
   height: 95px;
   background-image: url('../images/walkman.png');
   background-position: 0% 100%;
-  animation: human 6s linear  infinite;
+  animation: human 15s linear  infinite;
 }
 @keyframes human{
   0%{
     transform: translate(0, 0);
     opacity: 0;
   }
-  20%{
+  10%{
+    opacity: 1;
+  }
+  70%{
     opacity: 1;
   }
   80%{
-    opacity: 1;
+    opacity: 0;
+    transform: translate(952px, 0);
   }
   100%{
     opacity: 0;
-    transform: translate(952px, 0);
   }
 }
 

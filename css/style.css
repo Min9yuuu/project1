@@ -1,4 +1,31 @@
 @charset "utf-8";
+/* 학습용 팝업 */
+#layer{
+  display: block;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background-color:#ccc;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  font-size: 2.6em;
+  padding: 3em;
+  box-sizing: border-box;
+  line-height: 2;
+  top: 50px;
+  left: 150px;
+  text-align: center;
+}
+#layer button{
+  position: absolute;
+  cursor: pointer;
+  padding: 10px 20px;
+  right: 0;
+  top: 0;
+  background-color: #222;
+  color: #fff;
+}
+
 /* skip menu */
 
 .skip_menu{
@@ -160,6 +187,9 @@ header {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   flex-wrap: wrap;
+}
+.depth2_first{
+  border: none;
 }
 
 .depth2_first > li {
@@ -344,6 +374,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  
 }
 .gnb_util ul li button{
   color: #fff;
@@ -354,6 +385,7 @@ header {
   font-size: 1.5rem;
   border-radius: 30px;
   background: url('../images/ico_dotArrB_white.png') no-repeat right 18px center;
+  cursor: pointer;
 }
 
 /* intro영역 */
@@ -618,19 +650,21 @@ header {
   background-image: url('../images/walkman.png');
   background-position: 0% 100%;
   animation: human 15s linear  infinite;
+  opacity: 0;
+  animation-delay:1s ;
 }
 @keyframes human{
   0%{
     transform: translate(0, 0);
     opacity: 0;
   }
-  10%{
-    opacity: 1;
-  }
-  70%{
+  5%{
     opacity: 1;
   }
   80%{
+    opacity: 1;
+  }
+  85%{
     opacity: 0;
     transform: translate(952px, 0);
   }
@@ -1028,6 +1062,7 @@ header {
   font-size: 120px;
   line-height: 1em;
   color: rgba(255,255,255,0.7);
+  letter-spacing: 23px;
 }
 
 .tip_itemGroup{

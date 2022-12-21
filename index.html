@@ -309,12 +309,12 @@
               <button class="arvr"><span>도착</span></button>
             </div>
             <div class="search_listBox">
-              <a href="#" class="dprtr_arvrInfo">출발/도착안내</a>
+              <a href="#" class="dprtr_arvrInfo">출발/도착 안내</a>
               <div class="airport search_list">
                 <label for="airport_list">
                   공항
                 </label>
-                <select name="airport_lust" id="airport_list">
+                <select name="airport_list" id="airport_list">
                   <option value="김포">서울/김포</option>
                   <option value="부산/김해">부산/김해</option>
                   <option value="제주">제주</option>
@@ -333,10 +333,10 @@
                 </label>
                 <div class="search_timeG">
                   <select name="search_timeHour" class="time_item">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="00">00</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
                   </select>
                   <select name="search_timeMin" class="time_item">
                     <option value="00">00</option>
@@ -360,6 +360,29 @@
                 </div>
 
               </div>
+              <div class="search_division search_list">
+                <label for="search_divisionBox">구분</label>
+                <select name="search_divisionBox" id="search_divisionBox">
+                  <option value="ALL">전체</option>  
+                  <option value="국내선">국내선</option>  
+                  <option value="국제선">국제선</option>  
+                </select>
+              </div>
+              <div class="search_airline search_list">
+                <label for="search_airlineBox">항공사</label>
+                <select name="search_airlineBox" id="search_airlineBox">
+                  <option value="선택">선택</option>
+                  <option value="대한항공">대한항공</option>
+                  <option value="아시아나">아시아나</option>
+                  <option value="에어부산">에어부산</option>
+                  <option value="에어서울">에어서울</option>
+                </select>
+              </div>
+              <div class="airplane_name search_list">
+                <label for="airplane_num">편명</label>
+                <input type="text" id="airplane_num" class="inp_airplaneNum" placeholder="편명 입력">
+              </div>
+              <button class="airplane_searchBtn">조회</button>
             </div>
           </div>
         </div>

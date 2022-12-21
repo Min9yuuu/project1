@@ -512,8 +512,9 @@ header {
 /* search_listBox */
 
 .search_listBox{
-  display: flex;
   position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100px;
   margin-top: 15px;
@@ -527,12 +528,13 @@ header {
   position: absolute;
   font-size: 20px;
   right: 0;
-  top: -40px;
+  top: -50px;
   padding-right: 15px;
   background:url('../images/icon_AirScheduleArr.png') no-repeat right center;
 }
 
 .search_list{
+  display: inline-block;
   height: 78px;
   display: flex;
   flex-direction: column;
@@ -589,7 +591,7 @@ select.time_item{
   display: inline-block;
   width: 50%;
   height: 26px;
-  background-position: right 10₩px center;
+  background-position: right 10px center;
 }
 
 .search_timeG span{
@@ -603,8 +605,41 @@ select.time_item{
   line-height: 1em;
 }
 
+.search_division{
+  width: 14.5%;
+}
 
 
+.search_airline{
+  width: 21.5%;
+}
+
+.airplane_name{
+  width: 18.5%;
+}
+
+.airplane_name .inp_airplaneNum{
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1em;
+  box-sizing: border-box;
+  height: 20px;
+  vertical-align: top;
+}
+
+.airplane_searchBtn{
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  background-color: #a60436;
+  color: #fff;
+  line-height: 100px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 
 

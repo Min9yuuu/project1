@@ -655,17 +655,64 @@
               <p>PARKING RESERVATION</p>
               <p>주차 예약</p>
             </div>
-            <div class="parking_link">
-              <a href="#">
-                <img src="./images/parking_img01.png" alt="">
-                <span>PARKING FEE</span>
-                <b>주차 요금 안내</b>
-              </a>
-              <a href="#">
-                <img src="./images/parking_img02.png" alt="">
-                <span>CHANGE/CANCEL</span>
-                <b>예약 변경/취소</b>
-              </a>
+            <div class="parking_date">
+              <fieldset>
+                <div class="parking_group">
+                  <label>
+                    예약입차일시
+                  </label>
+                  <div class="parking_pick">
+                    <input type="text" class="parking_enter" placeholder="예약입차 일시 입력">
+                    <a href="#" class="calender" id="parking_calenderT1">
+                    </a>
+                  </div>
+                  <select  id="parking_enterHour" class="parking_time">
+                    <option value="">hh</option>
+                  </select>
+                  <select  id="parking_enterMin" class="parking_time">
+                    <option value="">mm</option>
+                  </select>
+                </div>
+                <div class="parking_group">
+                  <label>
+                    예약출차일시
+                  </label>
+                  <div class="parking_pick">
+                    <input type="text" class="parking_out" placeholder="예약출차 일시 입력">
+                    <a href="#" class="calender" id="parking_calenderT2">
+                    </a>
+                  </div>
+                  <select  id="parking_outHour" class="parking_time">
+                    <option value="">hh</option>
+                  </select>
+                  <select  id="parking_outMin" class="parking_time">
+                    <option value="">mm</option>
+                  </select>
+                </div>
+                <div class="parking_group">
+                  <label>차량선택</label>
+                  <select class="parking_car" name="" id="">
+                    <option value="nomalCar">일반</option>
+                  </select>
+                </div>
+                <div class="parking_group">
+                  <button>
+                    <span>예약하기</span>
+                  </button>
+                </div>
+              </fieldset>
+              <div class="parking_link">
+                <a href="#">
+                  <img src="./images/parking_img01.png" alt="">
+                  <span>PARKING FEE</span>
+                  <b>주차 요금 안내</b>
+                </a>
+                <a href="#">
+                  <img src="./images/parking_img02.png" alt="">
+                  <span>CHANGE/CANCEL</span>
+                  <b>예약 변경/취소</b>
+                </a>
+              </div>
             </div>
           </div>
         </div>

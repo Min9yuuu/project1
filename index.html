@@ -309,80 +309,54 @@
               <button class="arvr"><span>도착</span></button>
             </div>
             <div class="search_listBox">
-              <a href="#" class="dprtr_arvrInfo">출발/도착 안내</a>
-              <div class="airport search_list">
-                <label for="airport_list">
-                  공항
-                </label>
-                <select name="airport_list" id="airport_list">
-                  <option value="김포">서울/김포</option>
-                  <option value="부산/김해">부산/김해</option>
-                  <option value="제주">제주</option>
-                  <option value="대구">대구</option>
-                  <option value="울산">울산</option>
-                  <option value="청주">청주</option>
-                  <option value="무안">무안</option>
-                  <option value="광주">광주</option>
-                  <option value="여수">여수</option>
-                  <option value="포항경주">포항경주</option>
-                </select>
-              </div>
-              <div class="search_timeBox search_list">
-                <label for="search_time">
-                  시간
-                </label>
-                <div class="search_timeG">
-                  <select name="search_timeHour" class="time_item">
-                    <option value="00">00</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                  </select>
-                  <select name="search_timeMin" class="time_item">
-                    <option value="00">00</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                  </select>
-                  <span>~</span>
-                  <select name="search_timeHour" class="time_item">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
-                  <select name="search_timeMin" class="time_item">
-                    <option value="00">00</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                  </select>
+              <a href="#" class="airplane_site">출발/도착 안내</a>
+              <div class="search_group">
+                <div class="search_item airport_search">
+                  <label>공항</label>
+                  <button class="btn_option">
+                    <span>서울/김포</span>
+                  </button>
                 </div>
-
+                <div class="search_item time_selectBox">
+                  <label>시간</label>
+                  <div class="time_selectGroup">
+                    <select name="selectHour" class="time_item">
+                      <option value="00">00</option>
+                    </select>
+                    <select name="selectHour" class="time_item">
+                      <option value="00">00</option>
+                    </select>
+                  </div>
+                  <span>~</span>
+                  <div class="time_selectGroup">
+                    <select name="selectHour" class="time_item">
+                      <option value="00">00</option>
+                    </select>
+                    <select name="selectHour" class="time_item">
+                      <option value="00">00</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="search_item dmstc_intrn">
+                  <label>구분</label>
+                  <button class="btn_option">
+                    <span>전체</span>
+                  </button>
+                </div>
+                <div class="search_item airLine">
+                  <label>항공사</label>
+                  <button class="btn_option">
+                    <span>선택</span>
+                  </button>
+                </div>
+                <div class="search_item airplane_name">
+                  <label>편명</label>
+                  <input type="text" class="input_text" placeholder="편명입력">
+                </div>
               </div>
-              <div class="search_division search_list">
-                <label for="search_divisionBox">구분</label>
-                <select name="search_divisionBox" id="search_divisionBox">
-                  <option value="ALL">전체</option>  
-                  <option value="국내선">국내선</option>  
-                  <option value="국제선">국제선</option>  
-                </select>
-              </div>
-              <div class="search_airline search_list">
-                <label for="search_airlineBox">항공사</label>
-                <select name="search_airlineBox" id="search_airlineBox">
-                  <option value="선택">선택</option>
-                  <option value="대한항공">대한항공</option>
-                  <option value="아시아나">아시아나</option>
-                  <option value="에어부산">에어부산</option>
-                  <option value="에어서울">에어서울</option>
-                </select>
-              </div>
-              <div class="airplane_name search_list">
-                <label for="airplane_num">편명</label>
-                <input type="text" id="airplane_num" class="inp_airplaneNum" placeholder="편명 입력">
-              </div>
-              <button class="airplane_searchBtn">조회</button>
+              <button class="airplane_inqry">
+                조회
+              </button>
             </div>
           </div>
         </div>
@@ -541,6 +515,69 @@
             <p>BOOK A FLIGHT</p>
             <p>항공권예약</p>
           </div>
+          <fieldset>
+            <div class="flight_select">
+              <div class="flight_dmstcIntrn">
+                <button>
+                  <span>국내선</span>
+                </button>
+                <button>
+                  <span>국제선</span>
+                </button>
+              </div>
+              <div class="radio_select">
+                <span class="radio_item">
+                  <input type="radio" class="input_radio" name="trip_oneWay" id="trip" checked>
+                  <label for="trip">왕복</label>
+                </span>
+                <span class="radio_item">
+                  <input type="radio" class="input_radio" name="trip_oneWay" id="oneWay">
+                  <label for="oneWay">편도</label>
+                </span>
+              </div>
+            </div>
+            <div class="flight_option">
+              <div class="flightOption_group">
+                <div class="flight_startEnd">
+                  <label>출발지</label>
+                  <select class="flight_selOpt">
+                    <option value="GMP">서울/김포</option>
+                  </select>
+                </div>
+                <div class="flight_startEnd">
+                  <label>도착지</label>
+                  <select class="flight_selOpt">
+                    <option value="CJU">제주</option>
+                  </select>
+                </div>
+              </div>
+              <div class="flightOption_group">
+                <label>가는날/오는날</label>
+                <input type="text" class="day_startEnd" placeholder="가는날 입력">
+                <a href="#" class="calender" id="flight_calenderT1">
+                </a>
+                <span>~</span>
+                <input type="text" class="day_startEnd" placeholder="오는날 입력">
+                <a href="#" class="calender" id="flight_calenderT2">
+                </a>
+              </div>
+              <div class="flightOption_group">
+                <label>탑승객</label>
+                <button class="people_btn">
+                  성인 1,유아 0, 소아 0
+                </button>
+              </div>
+              <div class="flightOption_group">
+                <label>좌석등급</label>
+                <select class="flight_selOpt">
+                  <option value="ALL">전체</option>
+                </select>
+              </div>
+            </div>
+            <button class="flight_button">
+              <span>조회하기</span>
+            </button>
+          </fieldset>
         </div>
       </div>
     </div>

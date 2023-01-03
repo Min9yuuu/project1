@@ -1,32 +1,9 @@
 @charset "utf-8";
 @import url('./proc.css');
 @import url('./footer.css');
+@import url('./layer.css');
 /* 학습용 팝업 */
-#layer{
-  display: block;
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  background-color:#ccc;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-  z-index: 10000;
-  font-size: 2.6em;
-  padding: 3em;
-  box-sizing: border-box;
-  line-height: 2;
-  top: 50px;
-  left: 150px;
-  text-align: center;
-}
-#layer button{
-  position: absolute;
-  cursor: pointer;
-  padding: 10px 20px;
-  right: 0;
-  top: 0;
-  background-color: #222;
-  color: #fff;
-}
+
 
 /* skip menu */
 

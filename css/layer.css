@@ -1,0 +1,30 @@
+#layer{
+  display: block;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background-color:rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  font-size: 2.6em;
+  padding: 3em;
+  box-sizing: border-box;
+  line-height: 2;
+  top: 50px;
+  left: 200px;
+  text-align: center;
+}
+#layer button{
+  position: absolute;
+  cursor: pointer;
+  padding: 10px 20px;
+  right: 0;
+  top: 0;
+  background-color: #a60436;
+  color: #fff;
+}
+#layer > p{
+  color:#00589e;
+}

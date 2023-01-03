@@ -1,0 +1,143 @@
+
+
+#bnr_wrap{
+  width: 100%;
+  height: 110px;
+  background-color: #1c293c;
+  position: relative;
+  display: block;
+  top: 0;
+}
+
+.bnr{
+  position: relative;
+  max-width: 1300px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 0;
+  box-sizing: border-box;
+
+}
+
+.bnr > button{
+  width: 35px;
+  height: 35px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 17px);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.bnr_prev{
+  background-image: url('../images//icon_HeadBnrPrev.png');
+  left: -15px;
+}
+.bnr_next{
+  background-image: url('../images/icon_HeadBnrNext.png');
+  right: -15px;
+}
+
+.bnr_slideFrame{
+  width: 100%;
+  height: 110px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#banner{
+  display: block;
+  width: calc(650px * 18);
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+#banner li{
+  display: inline-block;
+  height: 100%;
+  width: 531px;
+  padding: 0 60px;
+  position: relative;
+}
+
+#banner li::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 110px;
+  top: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.2);
+}
+
+#banner>li>a{
+  width: 100%;
+  height: 110px;
+  position: relative;
+  padding-left: 105px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+#banner > li > a > img{
+  position: absolute;
+  top : 17px;
+  left: 0px;
+  width: 76px;
+  height: 76px;
+  display: inline-block;  
+
+}
+#banner > li > a > .bnr_text{
+  display: inline-block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #fecf57;
+  letter-spacing: -1px;
+  height: 60px;
+}
+
+#banner > li > a > span:last-child{
+  display: inline-block;
+  position: absolute;
+  top: 37px;
+  right: 0px;
+  width: 110px;
+  height: 38px;  
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+#bnr_wrap > button{
+  position: absolute;
+  top: calc(50% - 12px);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#bnr_wrap > .bnr_ctrl{
+  display: block;
+  width: 24px;
+  height: 24px;
+  right: 80px;
+  background-image: url('../images/ico_cirPause_white.png');
+}
+
+#bnr_wrap > .bnr_close{
+  width: 24px;
+  height: 24px;
+  right: 34px;
+  background-image: url('../images/icon_HeadBnrClosed.png');
+}

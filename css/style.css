@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('./proc.css');
+@import url('./footer.css');
 /* 학습용 팝업 */
 #layer{
   display: block;
@@ -72,7 +74,6 @@ header {
 
 /* logo */
 .logo {
-
   width: 15%;
   height: 90px;
   display: flex;
@@ -348,11 +349,11 @@ header {
   background: url('../images/ico_dotArrB_white.png') no-repeat ;
   
 }
-.popup_top{
+.popup_topClose{
   padding-right: 25px;
-  background: url('../images/ico_cirArrB_red.png') no-repeat ;
-  
+  background: url('../images/ico_cirArrA.png') no-repeat ;
 }
+
 
 
 /* gnb_util */
@@ -682,272 +683,6 @@ div.time_selectGroup{
   line-height: 1em;
   letter-spacing: -0.5px;
   padding-top: 15px;
-}
-
-/* proc */
-
-.proc{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.proc > .time{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.time >strong{
-  color: #346096;
-  font-size: 40px;
-}
-.time > span{
-  color: #888;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.standard{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-}
-.std_time {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  line-height: 1.6;
-}
-.std_time > strong{
-  font-size: 24px;
-}
-.std_time > span{
-  font-size: 22px;
-  padding: 0 10px;
-}
-
-.std_time > button{
-  width: 23px;
-  height: 20px;
-  background: url('../images/ico_reload.png') no-repeat center center;
-  background-size: cover;
-  cursor: pointer;
-}
-
-.std_type{
-  display: flex;
-  justify-content: flex-start;
-  position: absolute;
-  right: 0;
-  top: -60px;
-}
-.std_type > button{
-  font-size: 22px;
-  box-sizing: border-box;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.std_type > button:nth-child(1){
-  font-weight: bold;
-  border-bottom: 5px solid #000;
-}
-.std_type > button:nth-child(2){
-  margin-left: 15px;
-}
-.std_status{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  line-height: 1.6;
-}
-.std_status ul{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.std_status li{
-  box-sizing: border-box;
-  margin-left: 30px;
-}
-.std_status span{
-  position: relative;
-  display: block;
-  font-size: 18px;
-}
-
-.std_status span::before{
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  position: absolute;
-  left: -8px;
-  top: -6px;
-}
-.status_fast::before{
-  background-color: #589ce4;
-}
-.status_normal::before{
-  background-color: #62d144;
-}
-.status_busy::before{
-  background-color: #f98f39;
-}
-.status_verybusy::before{
-  background-color: #d93436;
-}
-
-.proc_img{
-  position: relative;
-  width: 100%;
-  height: 390px;
-  background: url('../images/proc_body.png');
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.walkLane{
-  position: absolute;
-  top: 211px;
-  left: 168px;
-  width: calc(100% - 168px);
-  height: 95px;
-  overflow: hidden;
-}
-
-.humen{
-  position: relative;
-  width: 60px;
-  height: 95px;
-  background-image: url('../images/walkman.png');
-  background-position: 0% 100%;
-  animation: human 15s linear  infinite;
-  opacity: 0;
-  animation-delay:1s ;
-}
-@keyframes human{
-  0%{
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  5%{
-    opacity: 1;
-  }
-  80%{
-    opacity: 1;
-  }
-  85%{
-    opacity: 0;
-    transform: translate(952px, 0);
-  }
-  100%{
-    opacity: 0;
-  }
-}
-
-
-.proc_img ul{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-}
-
-.proc_img li{
-  width: calc(100% / 7);
-  height: 50px;
-  line-height: 50px;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-}
-
-.proc_footer{
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  height: 70px;
-  box-sizing: border-box;
-}
-.proc_footer > div{
-  border: 1px dashed #e4e4e4;
-  border-top: 0;
-  position: relative;
-}
-
-.proc_footer > div::before{
-  background:url('../images/bg_arrow_top_off.png') no-repeat center center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: -5px;
-  content: '';
-  width: 10px;
-  height: 7px;
-}
-
-.step1{
-  width: 340px;
-  height: 35px;
-  margin-left: 253px;
-}
-.step2{
-  width: 161px;
-  height: 35px;
-  margin-left: 5px;
-}
-.step3{
-  width: 161px;
-  height: 35px;
-  margin-left: 5px;
-}
-.step4{
-  width: 161px;
-  height: 35px;
-  margin-left: 5px;
-}
-
-.proc_footer > div > div{
-  position:absolute;
-  top: 15px;
-  left: 50%;
-  background-color: #e4e4e4;
-  top: 15px;
-  left: 50%;
-  width: 140px;
-  height: 40px;
-  text-align: center;
-  border-radius: 40px;
-  transform: translateX(-50%);
-}
-
-.proc_text p{
-  position: relative;
-  padding-left: 20px;
-  letter-spacing: -1.2px;
-  font-size: 16px;
-}
-.proc_text p::before{
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '※';
-}
-.proc_text span{
-  color: #a60436;
-  font-weight: 700;
 }
 
 /* guide */

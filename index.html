@@ -256,7 +256,7 @@
           <a href="#" class="topLogin_btn">로그인</a>
           <a href="#" class="topSitemap_btn">사이트맵</a>
           <button class="lang_button">KOR</button>
-          <button class="popup_top">팝업닫기</button>
+          <button class="popup_topClose">팝업닫기</button>
         </div>
         <div class="gnb_util">
           <ul>
@@ -363,86 +363,100 @@
       </div>
     </div>
     <div class="brd_time container">
-      <div class="rowArea">
-        <div class="tit_Area">
-          <p>BOARDING PROCESS TIME</p>
-          <p>공항 탑승수속 소요시간 안내</p>
-          <p>셀프 체크인부터 항공기 출발까지 실시간 평균 소요시간 안내</p>
+    <div class="rowArea">
+      <div class="tit_Area">
+        <p>BOARDING PROCESS TIME</p>
+        <p>공항 탑승수속 소요시간 안내</p>
+        <p>셀프 체크인부터 항공기 출발까지 실시간 평균 소요시간 안내</p>
+      </div>
+      <div class="proc">
+        <div class="time">
+          <strong class="totalMin">70</strong>
+          <span>분</span>
         </div>
-        <div class="proc">
-          <div class="time">
-            <strong>안내 미운영</strong>
-            <span>(21:30~06:30)</span>
+        <div class="standard">
+          <div class="std_time">
+            <strong>AM</strong>
+            <span>기준</span>
+            <button></button>
           </div>
-          <div class="standard">
-            <div class="std_time">
-              <strong>AM</strong>
-              <span>기준</span>
-              <button></button>
-            </div>
-            <div class="std_type">
-              <button>국내선</button>
-              <button>국제선</button>
-            </div>
-            <div class="std_status">
-              <ul>
-                <li>
-                  <span class="status_fast">원활</span>
-                </li>
-                <li>
-                  <span class="status_normal">보통</span>
-                </li>
-                <li>
-                  <span class="status_busy">혼잡</span>
-                </li>
-                <li>
-                  <span class="status_verybusy">매우혼잡</span>
-                </li>
-              </ul>
-            </div>
+          <div class="std_type">
+            <button>국내선</button>
+            <button>국제선</button>
           </div>
-          <div class="proc_img">
-            <div class="walkLane">
-              <div class="humen"></div>
-            </div>
+          <div class="std_status">
             <ul>
-              <li><span>공항 도착(주차)</span></li>
-              <li><span>셀프 체크인</span></li>
-              <li><span>수하물 위탁</span></li>
-              <li><span>신분확인</span></li>
-              <li><span>보안검색</span></li>
-              <li><span>탑승시간</span></li>
-              <li><span>출발</span></li>
+              <li>
+                <span class="status_fast">원활</span>
+              </li>
+              <li>
+                <span class="status_normal">보통</span>
+              </li>
+              <li>
+                <span class="status_busy">혼잡</span>
+              </li>
+              <li>
+                <span class="status_verybusy">매우혼잡</span>
+              </li>
             </ul>
           </div>
-          <div class="proc_footer">
-            <div class="step1">
-              <div>
-                <p></p>
-              </div>
-            </div>
-            <div class="step2">
-              <div>
-                <p></p>
-              </div>
-            </div>
-            <div class="step3">
-              <div>
-                <p></p>
-              </div>
-            </div>
-            <div class="step4">
-              <div>
-                <p></p>
-              </div>
+        </div>
+        <div class="proc_img">
+          <div class="walkLane">
+            <div class="humen"></div>
+          </div>
+          <ul>
+            <li><span>공항 도착(주차)</span></li>
+            <li><span>셀프 체크인</span></li>
+            <li><span>수하물 위탁</span></li>
+            <li><span>신분확인</span></li>
+            <li><span>보안검색</span></li>
+            <li><span>탑승시간</span></li>
+            <li><span>출발</span></li>
+          </ul>
+        </div>
+        <div class="proc_footer">
+          <div class="step1">
+            <div>
+              <p>
+                <strong id="avgA">
+                  <span class="minNumA">15</span>
+                  <span class="minText">분</span>
+                </strong>
+              </p>
             </div>
           </div>
-          <div class="proc_text">
-            <p><span>항공권 셀프 체크인 및 수하물 위탁</span> 가능 시간은 항공사별 정책에 따라 달라질 수 있으며, 일반적으로 <span>국내선 항공기는 출발 예정 시각 30분전까지 가능</span>함에 유의하시기 바랍니다.</p>
-            <p>해당 소요시간 안내서비스는 탑승수속 구간별 여객이 체류하고 있는 <span>평균소요시간</span>을 안내하는 것으로, 기상상황 등 예상치 못한 요인에 따라 실제 소요시간과는 차이가 있을 수 있습니다.</p>
+          <div class="step2">
+            <div>
+              <p><strong id="avgB">
+                <span class="minNumB">5</span>
+                <span class="minText">분</span>
+              </strong></p>
+            </div>
+          </div>
+          <div class="step3">
+            <div>
+              <p><strong id="avgC">
+                <span class="minNumC">33</span>
+                <span class="minText">분</span>
+              </strong></p>
+            </div>
+          </div>
+          <div class="step4">
+            <div>
+              <p><strong id="avgD">
+                <span class="minNumD">18</span>
+                <span class="minText">분</span>
+              </strong></p>
+            </div>
           </div>
         </div>
+        <div class="proc_text">
+          <p><span>항공권 셀프 체크인 및 수하물 위탁</span> 가능 시간은 항공사별 정책에 따라 달라질 수 있으며, 일반적으로 <span>국내선 항공기는 출발 예정 시각 30분전까지 가능</span>함에 유의하시기 바랍니다.</p>
+          <p>해당 소요시간 안내서비스는 탑승수속 구간별 여객이 체류하고 있는 <span>평균소요시간</span>을 안내하는 것으로, 기상상황 등 예상치 못한 요인에 따라 실제 소요시간과는 차이가 있을 수 있습니다.</p>
+        </div>
       </div>
+    </div>
     </div>
     <div class="guide container">
       <div class="rowArea">
@@ -691,7 +705,7 @@
                 </div>
                 <div class="parking_group">
                   <label>차량선택</label>
-                  <select class="parking_car" name="" id="">
+                  <select class="parking_car">
                     <option value="nomalCar">일반</option>
                   </select>
                 </div>
@@ -791,28 +805,37 @@
       </div>
     </div>
     <div id="footer">
-      <footer>
-        <div class="foot_familySite">
-          <ul>
-            <li>
-              <button id="familySite_btn">
-                패밀리사이트
-              </button>
-            </li>
-          </ul>
-        </div>
-        <ul class="footer_list">
-          <li><a href="#">개인정보처리방침</a></li>
-          <li><a href="#">영상정보처리기기 운영관리방침</a></li>
-          <li><a href="#">서비스 제휴안내</a></li>
-          <li><a href="#">이메일무단수집거부</a></li>
-          <li><a href="#">고객서비스헌장</a></li>
+    <footer>
+      <div class="foot_familySite">
+        <ul>
+          <li>
+            <button id="familySite_btn">
+              패밀리사이트
+            </button>
+          </li>
         </ul>
-        <p class="tel">한국공항공사 고객선터 1661-2626</p>
-        <address><span>07505 서울시 강서구 하늘길 112(공항동)</span></address>
-        <p class="copyright">© 2020 Korea Airports Corporation. All Rights Reserved.</p>
-      </footer>
+      </div>
+      <ul class="footer_list">
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+        <li><a href="#">서비스 제휴안내</a></li>
+        <li><a href="#">이메일무단수집거부</a></li>
+        <li><a href="#">고객서비스헌장</a></li>
+      </ul>
+      <div class="f_util">
+        <ul class="f_sns">
+          <li><a href="https://validator.w3.org/check?uri=file:///Users/mingyukim/Documents/project1/index.html"><img src="https://www.w3.org/Icons/valid-html401" alt="유효성검사"></a></li>
+          <li><a href="https://validator.w3.org/check?uri=file:///Users/mingyukim/Documents/project1/index.html"><img src="https://www.w3.org/QA/Tools/I_heart_validator_lg" alt="유효성검사"></a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=file:///Users/mingyukim/Documents/practice/footer.html"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"></a></li>
+        </ul>
+      </div>
+      <p class="tel">한국공항공사 고객선터 1661-2626</p>
+      <address><span>07505 서울시 강서구 하늘길 112(공항동)</span></address>
+      <p class="copyright">© 2020 Korea Airports Corporation. All Rights Reserved.</p>
+    </footer>
     </div>
+    <script src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+    <script src="js/proc.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

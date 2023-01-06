@@ -235,9 +235,14 @@ header {
   height: 40px;
   background-color: #f0f0f0;
 }
+.gnb_depth2_txt::after{
+  content: '';
+  clear: both;
+  display: block;
+}
 .gnb_depth2_txt > li {
   position: relative;
-  display: inline-table;
+  display: inline-block;
   width: 20%;
   padding: 40px 20px 0 30px;
   box-sizing: border-box;

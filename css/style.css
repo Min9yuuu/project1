@@ -1,11 +1,10 @@
 @charset "utf-8";
+
 @import url('./bnr.css');
 @import url('./header.css');
 @import url('./proc.css');
 @import url('./footer.css');
 @import url('./layer.css');
-/* 학습용 팝업 */
-
 
 /* skip menu */
 
@@ -29,9 +28,6 @@
     background-color: #000;
     color: #fff;
 }
-
-
-
 /* intro영역 */
 
 .container{
@@ -276,8 +272,6 @@ div.time_selectGroup{
   font-size: 20px;
   font-weight: 500;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -754,8 +748,6 @@ button.people_btn{
   padding: 0 35px 0 13px;
   font-size: 16px;
   background: #fff url('../images/ico_selectArrB.png') no-repeat right 13px top 50%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 .parking_time:last-child{
@@ -771,8 +763,6 @@ button.people_btn{
   padding: 0 35px 0 13px;
   font-size: 16px;
   background: #fff url('../images/ico_selectArrB.png') no-repeat right 13px top 50%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 .parking_group > button{
@@ -998,111 +988,4 @@ button.people_btn{
   background-repeat: no-repeat;
   background-size: 54px auto;
   background-position: left bottom;
-}
-
-/* footer */
-
-#footer{
-  width: 100%;
-  position: relative;
-  box-sizing: border-box;
-  padding: 49px 0 46px;
-  background-color: #191a1a;
-}
-
-footer{
-  position: relative;
-  width: 100%;
-  max-width: 1240px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.foot_familySite{
-  position: absolute;
-  top: 0;
-  right: 30px;
-}
-
-.foot_familySite > ul{
-  width: 210px;
-  overflow: hidden;
-}
-
-#familySite_btn{
-  width: 210px;
-  height: 45px;
-  box-sizing: border-box;
-  padding: 0 100px 0 15px;
-  border: 1px solid #414242;
-  color: #fff;
-  background:url('../images/btn_family_on.png') no-repeat right 17px top 50%;
-  cursor: pointer;
-}
-
-
-.footer_list{
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-}
-
-.footer_list li{
-  position: relative;
-  padding-right: 12px;
-  margin-right: 12px;
-}
-
-.footer_list li::after{
-  content: '';
-  display: block;
-  position: absolute;
-  top: 7px;
-  right: 0;
-  width: 1px;
-  height: 13px;
-  background-color: #fff;
-  opacity: 0.2;
-}
-
-
-.footer_list a{
-  color: rgba(255,255,255,0.6);
-  font-size: 15px;
-}
-
-.footer_list li:first-child a{
-  color: #19a0ff;
-}
-
-.tel{
-  margin-top: 16px;
-  font-style: normal;
-  text-align: left;
-  font-size: 18px;
-  color: white;
-}
-
-address{
-  margin-top: 16px;
-  font-style: normal;
-  text-align: left;
-}
-
-address span{
-  margin: 0 12px 0 0;
-  color: rgba(255,255,255,0.6);
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 19px;
-}
-
-.copyright{
-  margin-top: 15px;
-  color: rgba(255,255,255,0.6);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 16px;
 }

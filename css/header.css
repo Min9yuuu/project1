@@ -204,16 +204,17 @@ header {
 }
 
 .gnb_depth2_txt {
+  display: block;
   position: relative;
   box-sizing: border-box;
   width: 80%;
-  font-size: 0;
-  letter-spacing: 0;
-  word-spacing: 0;
   text-align: left;
   height: auto;
   padding: 0 0 40px;
   overflow: hidden;
+  font-size: 0;
+  letter-spacing: 0;
+  word-spacing: 0;
 }
 .gnb_depth2_txt::after {
   position: absolute;
@@ -234,11 +235,6 @@ header {
   width: 100%;
   height: 40px;
   background-color: #f0f0f0;
-}
-.gnb_depth2_txt::after{
-  content: '';
-  clear: both;
-  display: block;
 }
 .gnb_depth2_txt > li {
   position: relative;

@@ -140,3 +140,15 @@
   right: 34px;
   background-image: url('../images/icon_HeadBnrClosed.png');
 }
+@media screen and (max-width:1520px) {
+  .bnr{
+    max-width: 1180px;
+  }
+  #banner{
+    width: calc(590px * 18);
+  }
+  #banner > li{
+    padding:0 40px;
+    width: 511px;
+  }
+}

@@ -49,23 +49,23 @@ $(function () {
       toggle = true;
     }
   });
+
+
   $("button.bnr_close").click(function () {
     if($("#bnr_wrap").css('display')=='block'){
-      $("#bnr_wrap").hide();
+      $("#bnr_wrap").slideUp(200);
       $(".popup_topClose").css({ "background-image": "url(images/ico_cirArrB_red.png)" });
     }
-    else{
-      $("#bnr_wrap").show();
-    }
+
   });
 
 
   $(".popup_topClose").click(function(){
     if ($("#bnr_wrap").css("display") == "block") {
-      $("#bnr_wrap").hide();
+      $("#bnr_wrap").slideUp(200);
       $(".popup_topClose").css({ "background-image": "url(images/ico_cirArrB_red.png)" });
     } else {
-      $("#bnr_wrap").show();
+      $("#bnr_wrap").slideDown(200);
       $(".popup_topClose").css({ "background-image": "url(images/ico_cirArrA.png)" });
     }
   });

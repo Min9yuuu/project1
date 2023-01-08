@@ -376,8 +376,6 @@ div.time_selectGroup{
   font-size: 20px;
   font-weight: 500;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 

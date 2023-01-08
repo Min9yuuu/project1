@@ -87,12 +87,13 @@
   cursor: pointer;
 }
 .dotCtrl{
-  width: 7px;
+  width: 15px;
   height: 15px;
   display: inline-block;
-  background: url('../images/sVisualSliderStop.png') no-repeat center center;
-  background-size: 100% auto;
-  margin: 0 11px;
+  background: url('../images/spr_ico_main_visual_play.png') no-repeat;
+  background-position:0 0;
+  background-size: cover;
+  margin: 0 10px;
   cursor: pointer;
 }
 

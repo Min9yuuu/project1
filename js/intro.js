@@ -32,11 +32,13 @@ $(function () {
     let restart = true;
     $(".dotCtrl").click(function () {
       if (restart) {
+        $(".dotCtrl").css({ "background-position-x": "100%"});
         clearInterval(id);
         restart = false;
       } else {
         timer();
         restart = true;
+        $(".dotCtrl").css({"background-position":"0 0"});
       }
     });
     btn.mouseenter(function () {

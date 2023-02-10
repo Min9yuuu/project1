@@ -52,13 +52,20 @@ setInterval(moveAni, 500);
 
 let date = new Date();
 let hours = date.getHours();
-let minute = date.getMinutes();
+let minute = String(date.getMinutes()).padStart(2, "0");
 let ampm = hours >= 12 ? "pm" : "am";
 
-$(".std_time > strong").html(`${ampm} ${hours}:${minute}`);
+let sHours = hours;
+if (sHours > 12) {
+  sHours = sHours - 12;
+}
+
+sHours = String(sHours).padStart(2, "0");
+
+$(".std_time > strong").html(`${ampm} ${sHours}:${minute}`);
 
 $(".std_type > button").eq(0).addClass("std_on");
-$('.std_type > button').click(function(e){
+$(".std_type > button").click(function (e) {
   e.preventDefault();
   let tg = $(this);
   $(".std_type > button").removeClass("std_on");

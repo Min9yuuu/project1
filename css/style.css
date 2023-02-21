@@ -1,30 +1,45 @@
 @charset "utf-8";
 
-@import url('./bnr.css');
-@import url('./header.css');
-@import url('./intro.css');
-@import url('./proc.css');
-@import url('./footer.css');
-@import url('./layer.css');
+@import url("./bnr.css");
+@import url("./header.css");
+@import url("./intro.css");
+@import url("./proc.css");
+@import url("./footer.css");
+@import url("./layer.css");
+@import url("./scroll.css");
 
 /* skip menu */
 
-#skipNav{position:relative;z-index:9999;width: 100%; margin: 0 auto;}
-#skipNav a{position: absolute; top: -200px; left:0;
-	width: 100%; line-height: 30px; color: #fff;
-  text-align: center; font-size: 20px;
-	border: 1px solid #dedede; background-color: black;}
-#skipNav a:focus, 
-#skipNav a:active{top: 0;}
-
+#skipNav {
+  position: relative;
+  z-index: 9999;
+  width: 100%;
+  margin: 0 auto;
+}
+#skipNav a {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #dedede;
+  background-color: black;
+}
+#skipNav a:focus,
+#skipNav a:active {
+  top: 0;
+}
 
 /* guide */
 
-.guide{
-  background-color: #E9EDF3;
+.guide {
+  background-color: #e9edf3;
 }
 
-.guide_item{
+.guide_item {
   width: 100%;
   margin-top: 65px;
   display: flex;
@@ -32,7 +47,7 @@
   align-items: center;
 }
 
-.guide_item > div{
+.guide_item > div {
   width: calc(50% - 15px);
   background-color: #fff;
   font-size: 0;
@@ -41,7 +56,7 @@
   text-align: center;
 }
 
-.guide_item > div > p{
+.guide_item > div > p {
   font-size: 34px;
   font-weight: 500;
   border-bottom: 1px solid #e6e6e6;
@@ -49,42 +64,40 @@
   letter-spacing: -1.5px;
 }
 
-
-.guide_item > div > a{
-  display: inline-block ;
+.guide_item > div > a {
+  display: inline-block;
   width: 33%;
   text-align: center;
   margin-top: 50px;
   line-height: 1em;
 }
 
-.guide_iconItem > a > img{
+.guide_iconItem > a > img {
   width: 100%;
 }
 
-.guide_iconItem > span{
+.guide_iconItem > span {
   display: block;
   font-size: 16px;
   font-weight: 500;
   margin-top: 16px;
-
 }
 
 /* flight */
 
-.flight{
-  background: url('../images/flight_visual1.png') no-repeat center center/cover;
+.flight {
+  background: url("../images/flight_visual1.png") no-repeat center center/cover;
 }
 
-.flight_item{
+.flight_item {
   width: 100%;
   margin: 100px;
   background-color: #f5f5f5;
-  padding:55px 120px 50px 120px ;
+  padding: 55px 120px 50px 120px;
   box-sizing: border-box;
 }
 
-.flight fieldset{
+.flight fieldset {
   font-size: 0;
   width: 100%;
   margin-top: 40px;
@@ -92,7 +105,7 @@
   border: none;
 }
 
-.flight_select{
+.flight_select {
   width: 100%;
   height: 37px;
   border-bottom: 1px solid #b3b4b8;
@@ -101,57 +114,55 @@
   justify-content: space-between;
 }
 
-.flight_select  button{
+.flight_select button {
   display: inline-block;
   background-color: transparent;
   position: relative;
 }
-.flight_select button:first-child{
+.flight_select button:first-child {
   padding-bottom: 15px;
 }
-.flight_select button:first-child::before{
-  content: '';
+.flight_select button:first-child::before {
+  content: "";
   display: block;
   width: 100%;
   height: 3px;
   background-color: #00589e;
   position: absolute;
   left: 0;
-  bottom:1px;
-
+  bottom: 1px;
 }
-.flight_select button:first-child span{
+.flight_select button:first-child span {
   padding-bottom: 15px;
   color: #00589e;
 }
-.flight_select button:last-child{
+.flight_select button:last-child {
   margin-left: 35px;
 }
-.flight_dmstcIntrn span{
+.flight_dmstcIntrn span {
   font-size: 22px;
   font-weight: 500;
   color: #5b5c5e;
   letter-spacing: -0.5px;
   line-height: 1em;
 }
-.radio_select{
+.radio_select {
   width: 180px;
   height: 30px;
   display: flex;
   justify-content: flex-end;
 }
-.radio_item{
+.radio_item {
   height: 30px;
-} 
-.radio_item:last-child{
+}
+.radio_item:last-child {
   margin-left: 30px;
 }
 
-
-.radio_item > .input_radio{
+.radio_item > .input_radio {
   display: none;
 }
-.radio_item label{
+.radio_item label {
   position: relative;
   min-height: 20px;
   padding: 0px 1px 0 27px;
@@ -159,17 +170,17 @@
   font-weight: 400;
   color: #000;
   cursor: pointer;
-  background: url('../images/ico_inputRadio.png') no-repeat 0 3px;
+  background: url("../images/ico_inputRadio.png") no-repeat 0 3px;
 }
-.radio_item > input[type="radio"]:checked + label{
-  background: url('../images/ico_inputRadio_on.png') no-repeat 0 3px;
+.radio_item > input[type="radio"]:checked + label {
+  background: url("../images/ico_inputRadio_on.png") no-repeat 0 3px;
 }
 
-.flight_option{
+.flight_option {
   margin-top: 5px;
   width: 100%;
 }
-.flightOption_group{
+.flightOption_group {
   width: calc(50% - 27.5px);
   display: inline-block;
   vertical-align: top;
@@ -177,19 +188,19 @@
   margin-right: 55px;
   position: relative;
 }
-.flightOption_group:nth-child(2n){
+.flightOption_group:nth-child(2n) {
   margin-right: 0;
 }
-.flight_startEnd{
+.flight_startEnd {
   width: calc(50% - 10px);
   display: inline-block;
   margin-right: 20px;
 }
-.flight_startEnd:last-child{
+.flight_startEnd:last-child {
   margin-right: 0;
 }
 
-.flightOption_group label{
+.flightOption_group label {
   margin: 25px 0 15px 0;
   font-size: 16px;
   font-weight: 500;
@@ -199,21 +210,21 @@
   line-height: 1em;
 }
 
-.flight_selOpt{
+.flight_selOpt {
   height: 60px;
   border: 0 none;
   border-bottom: 1px solid #cacdd4;
   width: 100%;
   padding: 0 35px 0 13px;
   color: #000;
-  background: url('../images/ico_selectArrB.png') no-repeat right 13px top 50%;
-  appearance:none;
+  background: url("../images/ico_selectArrB.png") no-repeat right 13px top 50%;
+  appearance: none;
   font-size: 16px;
   font-weight: bold;
   background-color: #fff;
 }
 
-.day_startEnd{
+.day_startEnd {
   width: calc(50% - 10px);
   display: inline-block;
   height: 60px;
@@ -225,7 +236,7 @@
   font-size: 16px;
 }
 
-.flightOption_group > span{
+.flightOption_group > span {
   width: 20px;
   display: inline-block;
   font-size: 14px;
@@ -233,11 +244,11 @@
   margin-left: 6px;
 }
 
-.calender{
+.calender {
   position: relative;
   border: 0 none;
   padding: 0;
-  background: url('../images/datepicker-sprite.png') no-repeat;
+  background: url("../images/datepicker-sprite.png") no-repeat;
   background-position: 0 -72px;
   min-width: 18px;
   height: 18px;
@@ -247,7 +258,7 @@
   margin: 0 0 0 -25px;
 }
 
-button.people_btn{
+button.people_btn {
   width: 100%;
   height: 60px;
   border: 0 none;
@@ -256,18 +267,18 @@ button.people_btn{
   font-weight: bold;
   padding: 0 35px 0 13px;
   text-align: left;
-  background: #fff url('../images/ico_selectArrB.png') no-repeat right 13px top 50%;
+  background: #fff url("../images/ico_selectArrB.png") no-repeat right 13px top 50%;
   cursor: pointer;
 }
 
-.flight_button{
+.flight_button {
   width: 230px;
   margin-top: 40px;
   background-color: #a70638;
   border: 0 none;
 }
 
-.flight_button > span{
+.flight_button > span {
   display: block;
   min-width: 145px;
   margin: 0;
@@ -281,16 +292,16 @@ button.people_btn{
 
 /* parking */
 
-.parking_info{
-  background: url('../images/parking_visual3.png') no-repeat center center / cover;
+.parking_info {
+  background: url("../images/parking_visual3.png") no-repeat center center / cover;
 }
 
-.parking_itemGroup{
+.parking_itemGroup {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.parking_item{
+.parking_item {
   width: calc(50% - 20px);
   background-color: #f5f5f5;
   box-sizing: border-box;
@@ -298,26 +309,26 @@ button.people_btn{
   padding: 40px 45px 70px 45px;
 }
 
-.parking_status{
+.parking_status {
   width: 100%;
   height: auto;
   margin-bottom: 45px;
   margin-top: 40px;
 }
 
-.parkingAria_tit{
+.parkingAria_tit {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.status_bar{
+.status_bar {
   width: 100%;
   height: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.status_bar > p{
+.status_bar > p {
   width: 30%;
   height: 100%;
   display: inline-block;
@@ -328,33 +339,33 @@ button.people_btn{
   font-weight: 500;
 }
 
-.status_bar > p:first-child{
+.status_bar > p:first-child {
   background-color: #279dfd;
 }
 
-.parking_link{
+.parking_link {
   width: 100%;
   margin-top: 34px;
 }
 
-.parking_link  a{
+.parking_link a {
   box-sizing: border-box;
   display: inline-block;
   width: 49%;
 }
 
-.parking_link a:last-child{
+.parking_link a:last-child {
   padding-left: 40px;
   border-left: 1px solid #dbdde1;
 }
 
-.parking_link > a > img{
+.parking_link > a > img {
   height: 45px;
   display: block;
   margin-bottom: 15px;
 }
 
-.parking_link  span{
+.parking_link span {
   font-size: 12px;
   font-weight: bold;
   color: #00589e;
@@ -363,29 +374,29 @@ button.people_btn{
   margin-bottom: 8px;
 }
 
-.parking_link b{
+.parking_link b {
   display: inline-block;
   font-size: 23px;
   padding-right: 50px;
-  background: url('../images/ParkingLinkArr.png') no-repeat  right center ;
+  background: url("../images/ParkingLinkArr.png") no-repeat right center;
   background-size: 24px;
   font-weight: 500;
   color: #000;
   line-height: 1em;
 }
 
-.parking_date{
+.parking_date {
   width: 100%;
   box-sizing: border-box;
   margin-top: 40px;
 }
-.parking_date > fieldset{
+.parking_date > fieldset {
   width: 100%;
   margin: 0;
   text-align: center;
 }
 
-.parking_group> label{
+.parking_group > label {
   margin: 0 0 15px 0;
   font-size: 16px;
   font-weight: 500;
@@ -395,11 +406,11 @@ button.people_btn{
   line-height: 1em;
 }
 
-.parking_group:nth-child(3){
+.parking_group:nth-child(3) {
   margin-top: 25px;
 }
 
-.parking_group{
+.parking_group {
   width: calc(50% - 13px);
   display: inline-block;
   vertical-align: top;
@@ -408,11 +419,11 @@ button.people_btn{
   position: relative;
 }
 
-.parking_group:nth-child(2n){
+.parking_group:nth-child(2n) {
   margin-right: 0;
 }
 
-.parking_pick{
+.parking_pick {
   width: 100%;
   height: auto;
   position: relative;
@@ -420,7 +431,7 @@ button.people_btn{
   margin-bottom: 5px;
 }
 .parking_enter,
-.parking_out{
+.parking_out {
   width: 100%;
   margin-left: -7px;
   height: 60px;
@@ -432,7 +443,7 @@ button.people_btn{
   box-sizing: border-box;
 }
 
-.parking_time{
+.parking_time {
   width: calc(50% - 7px);
   margin-right: 10px;
   height: 60px;
@@ -441,14 +452,14 @@ button.people_btn{
   font-weight: bold;
   padding: 0 35px 0 13px;
   font-size: 16px;
-  background: #fff url('../images/ico_selectArrB.png') no-repeat right 13px top 50%;
+  background: #fff url("../images/ico_selectArrB.png") no-repeat right 13px top 50%;
   appearance: none;
 }
-.parking_time:last-child{
+.parking_time:last-child {
   margin-right: 0px;
 }
 
-.parking_car{
+.parking_car {
   height: 60px;
   border: 0 none;
   border-bottom: 1px solid #cacdd4;
@@ -456,10 +467,10 @@ button.people_btn{
   width: 100%;
   padding: 0 35px 0 13px;
   font-size: 16px;
-  background: #fff url('../images/ico_selectArrB.png') no-repeat right 13px top 50%;
+  background: #fff url("../images/ico_selectArrB.png") no-repeat right 13px top 50%;
   appearance: none;
 }
-.parking_group > button{
+.parking_group > button {
   margin-top: 55px;
   width: 100%;
   background-color: #a70638;
@@ -468,7 +479,7 @@ button.people_btn{
   box-sizing: border-box;
 }
 
-.parking_group > button > span{
+.parking_group > button > span {
   width: 100%;
   height: 58px;
   line-height: 58px;
@@ -477,15 +488,13 @@ button.people_btn{
   display: block;
 }
 
-
-
 /* transport */
 
-.transport{
-  background-color: #E9EDF3;
+.transport {
+  background-color: #e9edf3;
 }
 
-.transport_itemGroup{
+.transport_itemGroup {
   width: 100%;
   height: auto;
   margin-top: 65px;
@@ -494,9 +503,7 @@ button.people_btn{
   align-items: center;
 }
 
-
-
-.transport_item{
+.transport_item {
   position: relative;
   width: 30%;
   margin-right: 40px;
@@ -510,21 +517,21 @@ button.people_btn{
   cursor: pointer;
 }
 
-.transport_item:hover{
+.transport_item:hover {
   background-size: 120% 120%;
 }
 
-.transport_item:nth-child(1){
+.transport_item:nth-child(1) {
   background-image: url("../images/transport_item01.png");
 }
-.transport_item:nth-child(2){
+.transport_item:nth-child(2) {
   background-image: url("../images/transport_item02.png");
 }
-.transport_item:nth-child(3){
+.transport_item:nth-child(3) {
   background-image: url("../images/transport_item03.png");
 }
 
-.transport_info{
+.transport_info {
   width: calc(100% - 80px);
   position: absolute;
   left: 0;
@@ -535,7 +542,7 @@ button.people_btn{
   min-height: 250px;
 }
 
-.transport_info span{
+.transport_info span {
   font-size: 13px;
   font-weight: bold;
   color: #00589e;
@@ -545,7 +552,7 @@ button.people_btn{
   letter-spacing: 1em;
 }
 
-.transport_info b{
+.transport_info b {
   font-size: 34px;
   font-weight: 500;
   display: block;
@@ -554,7 +561,7 @@ button.people_btn{
   line-height: 1em;
 }
 
-.transport_info p{
+.transport_info p {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.5px;
@@ -563,14 +570,14 @@ button.people_btn{
 }
 
 /* airport */
-.airport_tip{
+.airport_tip {
   margin-top: 40px;
   width: 100%;
   height: 120px;
   margin-bottom: 40px;
 }
 
-.airport_tip a{
+.airport_tip a {
   display: block;
   width: 100%;
   height: 100%;
@@ -580,7 +587,7 @@ button.people_btn{
   overflow: hidden;
 }
 
-.airport_tip img{
+.airport_tip img {
   position: absolute;
   top: 0;
   left: 0;
@@ -589,11 +596,11 @@ button.people_btn{
   transition: all 2s;
 }
 
-.airport_tip:hover img{
+.airport_tip:hover img {
   transform: scale(1.2);
 }
 
-.airport_tip span{
+.airport_tip span {
   position: relative;
   display: inline-block;
   padding-right: 76px;
@@ -601,23 +608,23 @@ button.people_btn{
   line-height: 1em;
   color: #fff;
   font-weight: 500;
-  background-image: url('../images/airportGuideArr.png');
+  background-image: url("../images/airportGuideArr.png");
   background-repeat: no-repeat;
   background-size: 54px auto;
   background-position: right center;
 }
 
-.airport_tip b{
+.airport_tip b {
   position: absolute;
   right: 0;
   bottom: 0;
   font-size: 120px;
   line-height: 1em;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   letter-spacing: 23px;
 }
 
-.tip_itemGroup{
+.tip_itemGroup {
   width: 100%;
   display: flex;
   align-items: center;
@@ -625,12 +632,12 @@ button.people_btn{
   margin-top: 40px;
 }
 
-.tip_item{
+.tip_item {
   width: 30%;
   height: 390px;
 }
 
-.tip_item a{
+.tip_item a {
   display: block;
   width: 100%;
   height: 100%;
@@ -640,8 +647,7 @@ button.people_btn{
   overflow: hidden;
 }
 
-
-.tip_item img{
+.tip_item img {
   position: absolute;
   top: 0;
   left: 0;
@@ -650,11 +656,11 @@ button.people_btn{
   transition: all 2s;
 }
 
-.tip_item:hover img{
+.tip_item:hover img {
   transform: scale(1.2);
 }
 
-.tip_item span{
+.tip_item span {
   position: relative;
   font-size: 13px;
   font-weight: bold;
@@ -667,7 +673,7 @@ button.people_btn{
   top: 15%;
 }
 
-.tip_item b{
+.tip_item b {
   position: relative;
   left: 20px;
   top: 20%;
@@ -678,7 +684,7 @@ button.people_btn{
   display: block;
   color: #fff;
   padding-bottom: 75px;
-  background-image: url('../images/airportGuideArr.png');
+  background-image: url("../images/airportGuideArr.png");
   background-repeat: no-repeat;
   background-size: 54px auto;
   background-position: left bottom;

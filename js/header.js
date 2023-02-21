@@ -25,9 +25,6 @@ $(function () {
     $("header").outerHeight(headerH + depH);
     $(".popup_topClose").addClass("headOver");
   });
-  $(".gnb_depth1").mouseleave(function () {
-    $(".gnb_depth1").eq(i).find(depA).css("color", "#black");
-  });
   $("header").mouseleave(function () {
     $(".depth2_wrap").css("display", "none");
     $(".logo >a >img").attr("src", "images/logo.png");

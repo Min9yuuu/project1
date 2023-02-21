@@ -32,7 +32,7 @@
   font-size: 18px;
   box-sizing: border-box;
   overflow: hidden;
-  position:relative;
+  position: relative;
 }
 .scroll_menu ul li > a:hover,
 .scroll_menu ul li.on > a {
@@ -56,4 +56,19 @@
 .scroll_menu ul li > a:hover::after,
 .scroll_menu ul li.on > a::after {
   transform: scaleX(1);
+}
+
+.scroll_menu .top_move_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+  top: 25%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+}
+.scroll_menu .top_move_box a {
+  color: #fff;
 }
